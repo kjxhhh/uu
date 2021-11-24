@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- conf.xml表示 添加Mybatis的配置文件 编写conf.xml需要注意配置文件的节点的顺序问题 注意顺序!!!!很重要 -->
+	<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<!-- 将bean包下所有的实体类引入配置文件中方便使用 -->
+		<package name="com.yr.entity" />
+		<!-- <typeAlias type="com.yr.entry.Student" alias="student"/> -->
+	</typeAliases>
+	<mappers>
+		<!-- 注册studentMapper.xml文件 -->
+		<mapper resource="com/yr/mapper/userMapper.xml" />
+	</mappers>
+</configuration>
